@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio @ Arunabha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f3992449c5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header section -->
+    <div id="header" class="parallax">
+        <div class="container">
+            <br>
+            <nav>
+                <img src="assets/Arun_logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Arunabha Dutta</span></h1>
+                <p class="typing" aria-live="polite">
+                    <span id="role"></span><span class="cursor" aria-hidden="true"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About section -->
+    <div id="about" class="parallax">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/Arun.png" alt="Profile Photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>
+                        Hi, I’m Arunabha Dutta, a passionate software developer and AI enthusiast. I enjoy solving complex problems, building scalable systems, and working on innovative solutions that make an impact. With strong foundations in software development and machine learning, I thrive in collaborative environments and love turning ideas into reality.
+                    </p>
+                    <br>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full-Stack Development</span><br>Building scalable web applications with Java, Spring Boot, Angular, and GraphQL</li>
+        <li><span>Machine Learning & AI</span><br>Developing predictive models using Python, Scikit-learn, and Transformers</li>
+        <li><span>Problem Solving</span><br>Strong foundations in Data Structures, Algorithms, and Object-Oriented Programming</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2026(upcoming)</span><br>B.Tech(CSE) from UEM, Kolkata</li>
+                            <li><span>2020-2022</span><br>ISC from Calcutta Public School, Ashwininagar</li>
+                            <li><span>2010-2020</span><br>ICSE from Calcutta Public School, Joramandir</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience section -->
+    <div id="experience" class="parallax">
+        <div class="container">
+            <h1 class="sub-title">Professional Experience</h1><br>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-building fa-beat"></i>
+                    <h2>Hyland Software</h2>
+                    <p>Research and Development Intern <br>(Jun 2025 – Aug 2025)<br><br>
+                    Implemented the Manage Locks functionality in OnBase Mobile and contributed to the transition of over 70% of users from legacy applications.</p><br>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-laptop-code fa-beat"></i>
+                    <h2>Infosys Springboard</h2>
+                    <p>AI/ML Intern <br>(May 2024 – Jul 2024)<br><br>
+                    Developed a web app with data visualization to predict obesity levels based on dietary habits and daily activities, boosting user health awareness by 80%.</p><br>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-flask fa-beat"></i>
+                    <h2>IIT Guwahati</h2>
+                    <p>Machine Learning Intern <br>(May 2024 – Jun 2024)<br><br>
+                    Predicted particulate matter content to support pollution control efforts and forecasted airborne particulate concentration in Guwahati for the upcoming decade.</p><br>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects section -->
+    <div id="projects" class="parallax">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1><br>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-shield-halved fa-beat"></i>
+                    <h2>Vulgarity Detection</h2>
+                    <p>A deep learning-based system using LSTM, GRU, and Seq2Seq models to detect and moderate user-generated content, ensuring real-world applicability.</p><br>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-lock fa-beat"></i>
+                    <h2>Document Lock Management</h2>
+                    <p>Developed a lock control workflow to prevent document editing conflicts, with Angular-based views and GraphQL integration for selection and unlock actions.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-cloud-sun fa-beat"></i>
+                    <h2>Air Quality Forecasting</h2>
+                    <p>Built predictive models to monitor particulate matter and forecast pollution levels in urban environments, enabling insights for future planning.</p><br>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact section  -->
+    <div id="contact" class="parallax">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1><br>
+                    <p><i class="fa-solid fa-paper-plane"></i>arunabha.uem@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 91236 25148</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/arunabha-dutta" id="blue"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Arun9123/" id="white"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://wa.me/+919123625148" id="green"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com" id="blue"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com" id="pink"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="assets/my-cv.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter your name" required>
+                        <input type="email" name="Email" placeholder="Enter email address" required>
+                        <textarea name="Message" rows="4" placeholder="Enter your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Arunabha. Created with <i class="fa-solid fa-heart fa-fade" id="heart"></i> in India.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
